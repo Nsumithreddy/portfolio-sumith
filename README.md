@@ -3,11 +3,9 @@
 Welcome to my personal developer portfolio! This website showcases my skills, projects, and contact details in a clean and responsive format.
 
 🚀 Live Demo
+🔗 [Click here to view the live site](https://nsumithreddy.github.io/portfolio-sumith)
 
-🔗 [View Website](https://nsumithreddy.github.io/portfolio-sumith)
-
-
-## 📄 About the Project
+📄 About the Project
 
 This portfolio is built using **HTML, CSS, and JavaScript**, with a mobile-responsive layout and smooth animations using `ScrollReveal.js`. It includes:
 
@@ -53,7 +51,7 @@ portfolio-sumith/
 
 The website allows users to download my latest resume:
 
-📄 `assets/Nagam_Sumith_Resume.pdf`  
+📄 `portfolio/Nagam_Sumith_Resume.pdf`  
 ➡️ Click the **“Download CV”** button on the site to access it.
 
 👤 Author
