@@ -4,6 +4,8 @@ DESIGN MEETS DATA. A clean, responsive, and fully interactive personal portfolio
 
 This repository contains the complete source code for my personal portfolio, showcasing my skills in frontend development, data, and design.
 
+🌐Live Site: 
+   [https://Nsumithreddy.github.io/portfolio-sumith/]
 <br>
 
 ## Table of Contents
