@@ -1,194 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sumith | Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sumith | Portfolio</title>
+  <meta name="description" content="Frontend + Data developer. Responsive UIs, data apps, and ML-backed dashboards." />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- I updated this path -->
+  <link rel="icon" href="media/favicon.png" />
 </head>
-
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="logo">SUMITH.DEV</div>
-        <input type="checkbox" id="menu-toggle" hidden>
-        <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+  <header class="navbar" role="banner">
+    <a class="logo" href="#home" aria-label="Go to top">SUMITH.DEV</a>
+
+    <input type="checkbox" id="menu-toggle" hidden>
+    <label for="menu-toggle" class="menu-icon" aria-label="Toggle menu" aria-controls="site-nav" aria-expanded="false">
+      <i class="fas fa-bars"></i>
+    </label>
+
+    <nav id="site-nav" class="nav-wrap" role="navigation">
+      <ul class="nav-links">
+        <li><a class="nav-link" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#skills">Skills</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <!-- Hero Section -->
-    <div id="particles-js">
-        <section class="hero">
-            <div class="hero-left">
-                <p class="tagline">WE DESIGN & BUILD BRANDS</p>
-                <h1>Hi, I am <span>Nagam Sumith Reddy</span><br>I build responsive & modern web applications.</h1>
-                <div class="buttons">
-                    <a href="#" class="btn primary">Hire me</a>
-                    <a href="NAGAM_SUMITH_REDDY_.pdf" class="btn outline" download>Download CV</a>
-                </div>
+  <main id="home" class="main" role="main">
+    <section class="hero" aria-label="Intro">
+      <div class="hero-left">
+        <p class="tagline">DESIGN MEETS DATA</p>
+        <h1>Hi, I’m <span>Nagam Sumith Reddy</span> — I build responsive web apps and data products.</h1>
+        <div class="buttons">
+          <a href="#contact" id="hire-me-btn" class="btn primary">Hire Me</a>
+          <button id="view-cv-btn" class="btn outline" type="button">View CV</button>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="blob" aria-hidden="true"><i class="fas fa-code"></i></div>
+        <div class="bg-skew" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section id="about" class="about-section" aria-label="About">
+      <div class="container about-grid about-no-photo">
+        <div class="about-illustration" aria-hidden="true">
+          <div class="chip"><i class="fa-solid fa-brain"></i></div>
+          <div class="chip"><i class="fa-solid fa-database"></i></div>
+          <div class="chip"><i class="fa-solid fa-gears"></i></div>
+        </div>
+        <div class="about-content">
+          <h5 class="section-subtitle">My introduction</h5>
+          <h2>About Me</h2>
+          <p>
+            Full-stack Python & AI developer from Nalgonda, Telangana. I design clean UIs, build reliable APIs (FastAPI/Flask/Django), and ship ML features with scikit-learn/XGBoost and data viz in Plotly/Power BI. I care about readable code, sharp UX, and shipping value quickly. Recent work: a real-time air-quality predictor and a career-guidance chatbot powered by LLMs.
+          </p>
+          <ul class="about-quick">
+            <li><strong>Email:</strong> <a href="mailto:sumithreddynagam23@gmail.com">sumithreddynagam23@gmail.com</a></li>
+            <li><strong>Location:</strong> Nalgonda, Telangana, India</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills-section" aria-label="Skills">
+      <h2>My Skills</h2>
+
+      <!-- I updated all these paths -->
+      <h3 class="skills-subhead">Frontend</h3>
+      <div class="skills-grid">
+        <article class="skill-card"><img src="media/html.png" class="skill-icon" alt="HTML" /><h4>HTML</h4><div class="level-label">95%</div></article>
+        <article class="skill-card"><img src="media/css.png" class="skill-icon" alt="CSS" /><h4>CSS</h4><div class="level-label">92%</div></article>
+        <article class="skill-card"><img src="media/javascript.png" class="skill-icon" alt="JavaScript" /><h4>JavaScript</h4><div class="level-label">80%</div></article>
+        <article class="skill-card"><img src="media/bootstrap.png" class="skill-icon" alt="Bootstrap" /><h4>Bootstrap</h4><div class="level-label">90%</div></article>
+        <article class="skill-card"><img src="media/react.png" class="skill-icon" alt="React" /><h4>React</h4><div class="level-label">60%</div></article>
+        <article class="skill-card"><img src="media/tailwindcss.png" class="skill-icon" alt="Tailwind CSS" /><h4>Tailwind CSS</h4><div class="level-label">70%</div></article>
+      </div>
+
+      <!-- I updated all these paths -->
+      <h3 class="skills-subhead">Backend & Data</h3>
+      <div class="skills-grid">
+        <article class="skill-card"><img src="media/python.jpg" class="skill-icon" alt="Python" /><h4>Python</h4><div class="level-label">90%</div></article>
+        <article class="skill-card"><img src="media/fastapi.png" class="skill-icon" alt="FastAPI" /><h4>FastAPI</h4><div class="level-label">75%</div></article>
+        <article class="skill-card"><img src="media/flask.png" class="skill-icon" alt="Flask" /><h4>Flask</h4><div class="level-label">80%</div></article>
+        <article class="skill-card"><img src="media/django.png" class="skill-icon" alt="Django" /><h4>Django</h4><div class="level-label">65%</div></article>
+        <article class="skill-card"><img src="media/streamlit.png" class="skill-icon" alt="Streamlit" /><h4>Streamlit</h4><div class="level-label">85%</div></article>
+        <article class="skill-card"><img src="media/nodejs.png" class="skill-icon" alt="Node.js" /><h4>Node.js</h4><div class="level-label">60%</div></article>
+      </div>
+
+      <!-- I updated all these paths -->
+      <h3 class="skills-subhead">Databases & Tools</h3>
+      <div class="skills-grid">
+        <article class="skill-card"><img src="media/mongodb.png" class="skill-icon" alt="MongoDB" /><h4>MongoDB</h4><div class="level-label">70%</div></article>
+        <article class="skill-card"><img src="media/postgresql.png" class="skill-icon" alt="PostgreSQL" /><h4>PostgreSQL</h4><div class="level-label">65%</div></article>
+        <article class="skill-card"><img src="media/gitgithub.png" class="skill-icon" alt="Git and GitHub" /><h4>Git/GitHub</h4><div class="level-label">80%</div></article>
+        <article class="skill-card"><img src="media/docker.png" class="skill-icon" alt="Docker" /><h4>Docker</h4><div class="level-label">50%</div></article>
+        <article class="skill-card"><img src="media/powerbi.jpg" class="skill-icon" alt="Power BI" /><h4>Power BI</h4><div class="level-label">80%</div></article>
+        <article class="skill-card"><img src="media/xgboost.png" class="skill-icon" alt="XGBoost/ML" /><h4>XGBoost/ML</h4><div class="level-label">75%</div></article>
+      </div>
+    </section>
+
+    <section id="projects" class="projects-section" aria-label="Projects">
+      <h2 class="section-title">My Projects</h2>
+      <div class="projects-grid">
+        <!-- I updated this path -->
+        <a class="project-card" href="https://career-guidance-chatbot.vercel.app/" target="_blank" rel="noopener" aria-label="Open Career Guidance Chatbot">
+          <img src="media/chatbot.png" alt="Career guidance chatbot UI" loading="lazy" />
+          <div class="project-info">
+            <h3>Career Guidance Chatbot</h3>
+            <p>Python, FastAPI, LLM, Vector DB</p>
+            <div class="project-cta">
+              <span class="badge live">Live</span>
+              <a class="code-btn" href="https://github.com/Nsumithreddy" target="_blank" rel="noopener">Code</a>
             </div>
-            <div class="hero-right">
-                <div class="bg-skew"></div>
-                <img src="main_img_sec.jpg" alt="Sumith" />
+          </div>
+        </a>
+
+        <!-- I updated this path -->
+        <a class="project-card" href="https://air-quality-monitoringg.streamlit.app" target="_blank" rel="noopener" aria-label="Open Air Quality Prediction live site">
+          <img src="media/airqualitymonitoring.png" alt="Air quality app screenshot" loading="lazy" />
+          <div class="project-info">
+            <h3>Real-Time Air Quality</h3>
+            <p>Python, Streamlit, XGBoost</p>
+            <div class="project-cta">
+              <span class="badge live">Live</span>
+              <a class="code-btn" href="https://github.com/Nsumithreddy/air-quality-ml" target="_blank" rel="noopener">Code</a>
             </div>
-        </section>
+          </div>
+        </a>
+
+        <!-- I updated this path -->
+        <a class="project-card" href="#" aria-label="Portfolio Website (preview)">
+          <img src="media/portfolio.png" alt="Portfolio preview" loading="lazy" />
+          <div class="project-info">
+            <h3>Portfolio Website</h3>
+            <p>HTML, CSS, JS</p>
+            <div class="project-cta">
+              <span class="badge">Preview</span>
+              <a class="code-btn" href="https://github.com/Nsumithreddy" target="_blank" rel="noopener">Code</a>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section" aria-label="Contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <form id="contact-form" class="contact-form" action="https://formspree.io/f/mqawzdwv" method="POST">
+          <div class="form-group"><input type="text" name="name" placeholder="Your Name" required /></div>
+          <div class="form-group"><input type="email" name="email" placeholder="Your Email" required /></div>
+          <div class="form-group"><textarea name="message" rows="5" placeholder="Your Message" required></textarea></div>
+          <button id="submit-btn" type="submit" class="btn primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer-container">
+      <h3>SUMITH.DEV</h3>
+      <p>Crafting frontend experiences with code & creativity ✨</p>
+      <div class="social-icons">
+        <a href="https://github.com/Nsumithreddy" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/sumithreddy-n-52a506253" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <p class="copyright">© 2025 Sumith R. All rights reserved.</p>
     </div>
+  </footer>
 
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-img">
-                    <img src="intro_sec_Img.jpg" alt="Profile Picture">
-                </div>
-                <div class="about-content">
-                    <h5 class="section-subtitle">MY INTRODUCTION</h5>
-                    <h2>About Me</h2>
-                    <p>
-                        I'm Nagam Sumith Reddy, a full-stack and data-focused developer from Telangana.
-                        I enjoy building responsive web interfaces and exploring data-driven technologies
-                        like dashboards and ML integrations. I’ve worked with Python, JavaScript, and tools
-                        like Power BI and Streamlit. Currently learning the MERN stack.
-                    </p>
-                    <p><em>“Design is intelligence made visible. Code brings it to life.”</em></p>
-
-                    <div class="about-details">
-                        <p><strong>Name:</strong> Nagam Sumith Reddy</p>
-                        <p><strong>Date of birth:</strong> June 23, 2005</p>
-                        <p><strong>Address:</strong> Hyderabad, Telangana, India</p>
-                        <p><strong>Zip code:</strong> 500001</p>
-                        <p><strong>Email:</strong> sumithreddynagam23@gmail.com</p>
-                        <p><strong>Phone:</strong> +91-9347846096</p>
-                    </div>
-                    <div class="interests">
-                        <span><i class="fas fa-music"></i> Music</span>
-                        <span><i class="fas fa-plane"></i> Travel</span>
-                        <span><i class="fas fa-film"></i> Movie</span>
-                        <span><i class="fas fa-futbol"></i> Sports</span>
-                    </div>
-                </div>
-            </div>
+  <!-- CV Modal -->
+  <div id="cv-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="cv-modal-title">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="cv-modal-title">Nagam Sumith Reddy - CV</h3>
+        <div class="modal-actions">
+          <!-- I updated this path -->
+          <a id="download-cv-btn" href="media/NAGAM_SUMITH_REDDY_.pdf" target="_blank" rel="noopener" class="modal-download">Open in new tab</a>
+          <button id="close-cv-btn" class="modal-close" aria-label="Close CV preview">&times;</button>
         </div>
-    </section>
+      </div>
+      <div class="modal-body">
+        <!-- I updated this path -->
+        <iframe
+          id="cv-frame"
+          src="media/NAGAM_SUMITH_REDDY_.pdf#toolbar=0&navpanes=0&scrollbar=0"
+          title="CV Preview"
+          loading="lazy"
+          width="100%"
+          height="100%"
+          style="border:0"
+        ></iframe>
+      </div>
+    </div>
+  </div>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills-section">
-        <h2>My Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-card">
-                <img src="html.png" class="skill-icon" alt="HTML" />
-                <h4>HTML</h4>
-                <div class="level-label">95%</div>
-            </div>
-            <div class="skill-card">
-                <img src="css.png" class="skill-icon" alt="CSS" />
-                <h4>CSS</h4>
-                <div class="level-label">92%</div>
-            </div>
-            <div class="skill-card">
-                <img src="javascript.png" class="skill-icon" alt="JavaScript" />
-                <h4>JavaScript</h4>
-                <div class="level-label">80%</div>
-            </div>
-            <div class="skill-card">
-                <img src="bootstrap.png" class="skill-icon" alt="Bootstrap" />
-                <h4>Bootstrap</h4>
-                <div class="level-label">90%</div>
-            </div>
-            <div class="skill-card">
-                <img src="react.png" class="skill-icon" alt="React" />
-                <h4>React (Learning)</h4>
-                <div class="level-label">60%</div>
-            </div>
-            <div class="skill-card">
-                <img src="powerbi.jpg" class="skill-icon" alt="Power BI" />
-                <h4>Power BI</h4>
-                <div class="level-label">80%</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects-section">
-        <h2 class="section-title">My Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <img src="airquality.jpg" alt="Air Quality Dashboard" />
-                <div class="project-info">
-                    <h3>Air Quality Prediction</h3>
-                    <p>Python, Streamlit, PySpark</p>
-                    <a href="https://github.com/Nsumithreddy/air-quality-ml" target="_blank">View Project</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <img src="neolearn.jpg" alt="Project 2" />
-                <div class="project-info">
-                    <h3>Learning Institute</h3>
-                    <p>HTML, CSS, JS</p>
-                    <a href="#" target="_blank">View Project</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <img src="portfolio.png" alt="Project 3" />
-                <div class="project-info">
-                    <h3>Portfolio Website</h3>
-                    <p>HTML, CSS, JS</p>
-                    <a href="#" target="_blank">View Project</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <form class="contact-form">
-                <div class="form-group">
-                    <input type="text" placeholder="Your Name" required />
-                </div>
-                <div class="form-group">
-                    <input type="email" placeholder="Your Email" required />
-                </div>
-                <div class="form-group">
-                    <textarea rows="5" placeholder="Your Message" required></textarea>
-                </div>
-                <button type="submit" class="btn primary">Send Message</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-container">
-            <h3>SUMITH.DEV</h3>
-            <p>Crafting frontend experiences with code & creativity ✨</p>
-            <div class="social-icons">
-                <a href="https://github.com/Nsumithreddy" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/sumithreddy-n-52a506253" target="_blank"><i class="fab fa-linkedin"></i></a>
-            </div>
-            <p class="copyright">© 2025 SumithR. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <!-- Scroll Reveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script>
-        ScrollReveal().reveal('.hero-left', { origin: 'left', distance: '50px', duration: 1000, delay: 300 });
-        ScrollReveal().reveal('.hero-right', { origin: 'right', distance: '50px', duration: 1000, delay: 500 });
-        ScrollReveal().reveal('.navbar', { origin: 'top', distance: '20px', duration: 800, delay: 200 });
-        ScrollReveal().reveal('.about-img', { origin: 'left', distance: '50px', duration: 1000, delay: 200 });
-        ScrollReveal().reveal('.about-content', { origin: 'right', distance: '50px', duration: 1000, delay: 300 });
-    </script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="script.js"></script>
 </body>
-
 </html>
