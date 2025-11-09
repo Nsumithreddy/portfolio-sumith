@@ -1,38 +1,93 @@
 SUMITH.DEV - Personal Portfolio
 
-Hi, I'm Nagam Sumith Reddy. This is the source code for my personal portfolio website, designed to showcase my skills, projects, and experience.
+DESIGN MEETS DATA. A clean, responsive, and fully interactive personal portfolio website built from scratch.
 
-This site is built from scratch with clean code, a mobile-first design, and a focus on a smooth user experience.
+This repository contains the complete source code for my personal portfolio, showcasing my skills in frontend development, data, and design.
 
-🚀 View Live Site
+<!--
+[YOUR SCREENSHOT TODO]
+This is commented out so it does NOT look broken.
 
-You can view the live, deployed version of this project at:
+When you are ready:
 
-https://Nsumithreddy.github.io/portfolio-sumith/
+Add your "screenshot.png" file to your "media" folder.
 
-✨ Features
+Delete this line and the "<!--" and "-->" lines below.
 
-Fully Responsive: Looks and works great on all devices, from mobile phones to desktops.
+-->
 
-Interactive CV Modal: The "View CV" button opens a clean, in-page preview of my resume without forcing a download.
+<!--
+-->
 
-AJAX Contact Form: A "no-refresh" contact form (powered by Formspree) that sends me an email, clears the form on success, and gives the user feedback.
+Table of Contents
 
-Smooth Scroll & Animations: Subtle "slide-in" animations (via ScrollReveal.js) and smooth scrolling for a modern, polished feel.
+About This Project
 
-Organized Code: All assets (images, PDFs) are organized into a media folder, and all JavaScript logic is separated into script.js.
+Tech Stack
 
-🛠️ Built With
+Key Features
 
-HTML5: For the core structure and content.
+Running This Project Locally
 
-CSS3: For all custom styling, animations, and the responsive layout (Flexbox/Grid).
+Get In Touch
 
-JavaScript (ES6+): To power all interactive features, including the modal, smooth scroll, and AJAX form.
+About This Project
 
-ScrollReveal.js: A library used for the "slide-in" animations on scroll.
+This project is more than just a resume; it's a practical demonstration of my ability to build a modern, mobile-first website from the ground up. I designed it to be clean, fast, and a true representation of my personal brand: the intersection of clean design and data-driven solutions.
 
-Formspree: For the fully functional contact form backend.
+🛠️ Tech Stack
+
+This site was built using:
+
+Frontend: 🎨
+
+HTML5 (Semantic)
+
+CSS3 (Custom Properties, Flexbox, Grid)
+
+JavaScript (ES6+) for all interactivity
+
+Tooling & Libraries: 🔧
+
+ScrollReveal.js: For the smooth, "on-scroll" fade-in animations.
+
+Formspree: As a simple, serverless backend for the AJAX contact form.
+
+Git & GitHub: For version control and deployment via GitHub Pages.
+
+✨ Key Features
+
+Fully Responsive: Looks and works perfectly on all devices, from small mobile screens to large desktops.
+
+Interactive CV Modal: The "View CV" button opens an in-page modal to preview my resume, rather than forcing a download.
+
+AJAX Contact Form: The "Get In Touch" form is powered by a "no-refresh" JavaScript submit. It sends me an email via Formspree, clears the inputs, and provides a "Message Sent!" success state.
+
+Smooth Animations: Subtle "slide-in" animations on page scroll to guide the user's eye and create a polished, modern feel.
+
+Clean Codebase: All files are organized logically. All assets (images, PDFs) are stored in the media folder, and all logic is cleanly separated in script.js.
+
+🚀 Running This Project Locally
+
+Want to run this project on your own machine? It's simple:
+
+Clone the repository:
+
+git clone [https://github.com/Nsumithreddy/portfolio-sumith.git](https://github.com/Nsumithreddy/portfolio-sumith.git)
+
+
+Navigate to the folder:
+
+cd portfolio-sumith
+
+
+Run a local server:
+
+This project is pure HTML, CSS, and JS. It needs no special build steps.
+
+The easiest way to run it is with a local server extension, like VS Code's "Live Server".
+
+(You can't just open index.html in your browser, as the JavaScript fetch for the contact form will be blocked by browser security (CORS)).
 
 📬 Get In Touch
 
